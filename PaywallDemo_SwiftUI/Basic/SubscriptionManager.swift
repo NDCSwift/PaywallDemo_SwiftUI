@@ -21,6 +21,8 @@ class SubscriptionManager{
     var purchasedProductIDs: Set<String> = []
     var isLoading = false
     var errorMessage: String?
+    var usageCount: Int = 0
+    let freeUsageLimit = 3
     
     private let productIDs: [String] = [
         "com.yourapp.monthly",
@@ -42,6 +44,10 @@ class SubscriptionManager{
         transactionListener?.cancel()
     }
     
+    
+    func recordUsage(){
+        usageCount += 1
+    }
     
     func fetchProducts() async {
         isLoading = true

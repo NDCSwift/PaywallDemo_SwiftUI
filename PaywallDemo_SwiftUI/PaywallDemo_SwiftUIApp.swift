@@ -19,9 +19,9 @@ struct PaywallDemo_SwiftUIApp: App {
     @State private var store = SubscriptionManager()
     var body: some Scene {
         WindowGroup {
-            //Swap to ContentView for tutorial view and AdvancedView for app demo
-            AdvancedView()
-            //ContentView()
+            //Swap to ContentView for tutorial view and AdvancedView for Sample app demo
+            //AdvancedView()
+            ContentView()
                 .environment(store)
         }
     }
