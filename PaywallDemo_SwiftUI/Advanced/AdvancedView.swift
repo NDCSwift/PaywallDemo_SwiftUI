@@ -5,7 +5,7 @@
     //  Created by Noah Carpenter
     //
     //  YouTube: Noah Does Coding
-    //  https://www.youtube.com/@NoahDoesCoding97
+    //  https://www.youtube.com/@noahdoescoding
     //
 
 import SwiftUI
